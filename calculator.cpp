@@ -21,7 +21,7 @@ int process_calculations(double first, double second, char op, int &count) {
     {
     case ('+'):
     {
-        std::cout << "Результат сложения: " << first + second << std::endl;
+        // тут вписать сложение
         break;
     }
     case ('-'):
@@ -31,16 +31,12 @@ int process_calculations(double first, double second, char op, int &count) {
     }
     case ('/'):
     {
-        if (second == 0) {
-            std::cout << "Ошибка! Деление на ноль." << std::endl;
-        } else {
-            std::cout << "Результат деления: " << first / second << std::endl;
-        }
+        // тут вписать деление
         break;
     }
     case ('*'):
     {
-        std::cout << "Результат умножения: " << first * second << std::endl;
+        // тут вписать умножение
         break;
     }
     default:
