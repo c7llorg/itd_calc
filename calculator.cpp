@@ -36,7 +36,7 @@ int process_calculations(double first, double second, char op, int &count) {
     }
     case ('*'):
     {
-        // Умножение выполнить здесь
+        std::cout << "Результат умножения: " << first * second << std::endl;
         break;
     }
     default:
