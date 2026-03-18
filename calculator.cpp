@@ -21,6 +21,7 @@ int process_calculations(double first, double second, char op, int &count) {
     {
     case ('+'):
     {
+        std::cout << "Результат сложения: " << first + second << std::endl;
         break;
     }
     case ('-'):
