@@ -30,12 +30,16 @@ int process_calculations(double first, double second, char op, int &count) {
     }
     case ('/'):
     {
-        // Деление выполнить здесь
+        if (!second) {
+            std::cout << "Невозможно деление на ноль. Попробуйте еще раз." << std::endl;
+            return 0;
+        }
+        std::cout << "Результат деления: " << std::fixed << std::setprecision(2) << first / second << std::endl;
         break;
     }
     case ('*'):
     {
-        // Умножение выполнить здесь
+        std::cout << "Результат умножения: " << std::fixed << std::setprecision(2) << first * second << std::endl;
         break;
     }
     default:
