@@ -13,14 +13,14 @@ void init_calc(double &var_first, double &var_second, char &operation)
     std::cin >> operation;
 }
 
-int process_calculations(char op, int &count) {
+int process_calculations(double first, double second, char op, int &count) {
     // Функция, где мы проводим вычисления, если операция не поддерживается, возвращаем код ошибки
     // При возврате 0 программа просит ввести данные заново, при 1 — завершается
+    // std::cout << op;
     switch (op)
     {
     case ('+'):
     {
-        // Сложение выполнить здесь
         break;
     }
     case ('-'):
@@ -63,7 +63,7 @@ int main() {
 
     do {
         init_calc(var_first, var_second, operation);
-        exit_status = process_calculations(operation, loop_count);
+        exit_status = process_calculations(var_first, var_second, operation, loop_count);
     } while (!exit_status);
     // Программа в цикле, пока не выполнит свою функцию
 
