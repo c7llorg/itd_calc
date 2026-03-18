@@ -26,7 +26,7 @@ int process_calculations(double first, double second, char op, int &count) {
     }
     case ('-'):
     {
-        // Вычитание выполнить здесь
+        std::cout << "Результат вычитания: " << first - second << std::endl;
         break;
     }
     case ('/'):
