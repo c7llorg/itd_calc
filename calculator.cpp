@@ -31,7 +31,11 @@ int process_calculations(double first, double second, char op, int &count) {
     }
     case ('/'):
     {
-        // Деление выполнить здесь
+        if (second == 0) {
+            std::cout << "Ошибка! Деление на ноль." << std::endl;
+        } else {
+            std::cout << "Результат деления: " << first / second << std::endl;
+        }
         break;
     }
     case ('*'):
